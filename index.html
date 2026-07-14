@@ -1,1 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>NALGONDA DISTRICT - GURRAMPODE MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#0b5394;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.place:hover{
+transform:translateY(-3px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+width:60px;
+height:60px;
+}
+
+.place{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.open-btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>NALGONDA DISTRICT</h1>
+<h2>GURRAMPODE MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+  <!-- 1 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏫</div>
+        <div class="info">
+            <h3>Nlg-Grp- Model School</h3>
+            <p>School</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.87093,79.09533" target="_blank">Open Map</a>
+</div>
+
+<!-- 2 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏛️</div>
+        <div class="info">
+            <h3>Nlg-Grp- MRO Office</h3>
+            <p>Government Office</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86705,79.10566" target="_blank">Open Map</a>
+</div>
+
+<!-- 3 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏢</div>
+        <div class="info">
+            <h3>Nlg-Grp- Sitara Meeseva Centre</h3>
+            <p>Meeseva</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86768,79.10561" target="_blank">Open Map</a>
+</div>
+
+<!-- 4 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏨</div>
+        <div class="info">
+            <h3>Nlg-Grp- Udipi Hotel</h3>
+            <p>Hotel</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86672,79.10982" target="_blank">Open Map</a>
+</div>
+
+<!-- 5 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">👞</div>
+        <div class="info">
+            <h3>Nlg-Grp- Vaishnavi Footwear</h3>
+            <p>Footwear Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86612,79.10921" target="_blank">Open Map</a>
+</div>
+
+<!-- 6 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏧</div>
+        <div class="info">
+            <h3>Nlg-Grp- Indi Cash ATM</h3>
+            <p>ATM</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86618,79.10889" target="_blank">Open Map</a>
+</div>
+
+<!-- 7 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">💊</div>
+        <div class="info">
+            <h3>Nlg-Grp- Dhanalakshmi Medicals</h3>
+            <p>Medical Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86587,79.10890" target="_blank">Open Map</a>
+</div>
+
+<!-- 8 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🛞</div>
+        <div class="info">
+            <h3>Nlg-Grp- Venkateshwara Tires</h3>
+            <p>Tyre Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86571,79.10887" target="_blank">Open Map</a>
+</div>
+
+<!-- 9 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🎁</div>
+        <div class="info">
+            <h3>Nlg-Grp- Renuka Matha Gift Shop</h3>
+            <p>Gift Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86624,79.10939" target="_blank">Open Map</a>
+</div>
+
+<!-- 10 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">💡</div>
+        <div class="info">
+            <h3>Nlg-Grp- Sri Lakshmi Electricals</h3>
+            <p>Electrical Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86642,79.10922" target="_blank">Open Map</a>
+</div>
+
+<!-- 11 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">☕</div>
+        <div class="info">
+            <h3>Nlg-Grp- Charminar Tea Place</h3>
+            <p>Tea Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86640,79.10928" target="_blank">Open Map</a>
+</div>
+
+<!-- 12 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🌾</div>
+        <div class="info">
+            <h3>Nlg-Grp- Mana Gromor</h3>
+            <p>Fertilizer Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86662,79.10883" target="_blank">Open Map</a>
+</div>
+
+<!-- 13 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏪</div>
+        <div class="info">
+            <h3>Nlg-Grp- BMR Traders</h3>
+            <p>Traders</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86646,79.10879" target="_blank">Open Map</a>
+</div>
+  <!-- 14 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏫</div>
+        <div class="info">
+            <h3>Nlg-Grp- Navodaya EM School</h3>
+            <p>School</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86778,79.10577" target="_blank">Open Map</a>
+</div>
+
+<!-- 15 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🚗</div>
+        <div class="info">
+            <h3>Nlg-Grp- Sri Harikrishna Automobile</h3>
+            <p>Automobile</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86791,79.10542" target="_blank">Open Map</a>
+</div>
+
+<!-- 16 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">👮</div>
+        <div class="info">
+            <h3>Nlg-Grp- Police Station</h3>
+            <p>Police Station</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86768,79.10471" target="_blank">Open Map</a>
+</div>
+
+<!-- 17 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏢</div>
+        <div class="info">
+            <h3>Nlg-Grp- Grama Panchayat</h3>
+            <p>Government Office</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86756,79.10459" target="_blank">Open Map</a>
+</div>
+
+<!-- 18 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🍷</div>
+        <div class="info">
+            <h3>Nlg-Grp- Sri Durga Wines</h3>
+            <p>Wines Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86555,79.10608" target="_blank">Open Map</a>
+</div>
+
+<!-- 19 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🛒</div>
+        <div class="info">
+            <h3>Nlg-Grp- LAM General Store</h3>
+            <p>General Store</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86436,79.10669" target="_blank">Open Map</a>
+</div>
+
+<!-- 20 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">📷</div>
+        <div class="info">
+            <h3>Nlg-Grp- Chaitra Photo Studio</h3>
+            <p>Photo Studio</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86701,79.10715" target="_blank">Open Map</a>
+</div>
+
+<!-- 21 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏛️</div>
+        <div class="info">
+            <h3>Nlg-Grp- MPDO</h3>
+            <p>Government Office</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86738,79.10531" target="_blank">Open Map</a>
+</div>
+
+<!-- 22 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">💧</div>
+        <div class="info">
+            <h3>Nlg-Grp- Irrigation Division</h3>
+            <p>Government Office</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86674,79.10491" target="_blank">Open Map</a>
+</div>
+
+<!-- 23 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🛕</div>
+        <div class="info">
+            <h3>Nlg-Grp- Sri Venkateshwara Temple</h3>
+            <p>Temple</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86765,79.11105" target="_blank">Open Map</a>
+</div>
+
+<!-- 24 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🌾</div>
+        <div class="info">
+            <h3>Nlg-Grp- Dhanalakshmi Fertilizers</h3>
+            <p>Fertilizer Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86731,79.11034" target="_blank">Open Map</a>
+</div>
+
+<!-- 25 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏦</div>
+        <div class="info">
+            <h3>Nlg-Grp- APGV Bank</h3>
+            <p>Bank</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=16.86676,79.10861" target="_blank">Open Map</a>
+</div>
+</div>
+
+<footer>
+© 2026 NALGONDA DISTRICT - GURRAMPODE MANDAL
+</footer>
+
+<script>
+
+function searchPlaces(){
+
+let input=document.getElementById("search").value.toLowerCase();
+
+let places=document.getElementsByClassName("place");
+
+for(let i=0;i<places.length;i++){
+
+let text=places[i].innerText.toLowerCase();
+
+places[i].style.display=text.includes(input)?"flex":"none";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
